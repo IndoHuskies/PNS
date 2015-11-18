@@ -1,1 +1,55 @@
-pns.css
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin: 0pt;
+	padding: 0pt;
+}
+
+h2 {
+	font-size: 200%;
+	text-align: center;
+}
+
+li {
+	font-size: 150%;
+}
+
+.part1, .part2 {
+	position: relative;
+	padding: 4%;
+}
+
+.divider{
+	height: 100pt;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.section {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.parallax {
+	perspective: 1px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.base {
+	transform: translateZ(0px);
+}
+
+.backgrounds {
+	background-color: #00FFFF;
+	transform: translateZ(-2px) scale(3);
+}
