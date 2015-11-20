@@ -53,3 +53,27 @@ li {
 	background-color: #00FFFF;
 	transform: translateZ(-2px) scale(3);
 }
+
+
+
+/*=======================
+		Home
+=========================*/
+#home {
+	text-align: center;
+}
+
+#home img {
+	width: 30vw;
+}
+
+
+/*=======================
+		About
+=========================*/
+#about div {
+	width: 80%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
