@@ -63,7 +63,12 @@ li {
 
 /* DEBUG */
 .bg {
-	background-color: #00FFFF;
+	background-image: url(img/bg-debug.jpg);
+	background-repeat: repeat-y;
+}
+
+.parallax-layer-back {
+  	height: 400%;
 }
 
 .bs {
@@ -71,25 +76,69 @@ li {
 }
 
 
+.background {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+.background img {
+	width: 100%;
+}
+
 
 /*=======================
 		Home
 =========================*/
 #home {
 	text-align: center;
+	position: relative;
+	color: #ccc;
 }
 
-#home img {
+#home .content img {
 	width: 30vw;
+}
+
+#home .content {
+	height: 100vh;
+}
+
+#home .content div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 
 /*=======================
 		About
 =========================*/
-#about div {
-	width: 80%;
-	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
+#about {
+	position: relative;
+	z-index: -2;
+}
+
+#about .content {
+	padding-top: 15%;
+	height: 90vh;
+	width: 65vw;
+	background: rgb(132, 204, 204);
+	transform: skew(47deg);
+}
+
+#about h2 {
+	font-size: 2.5em;
+	margin-left: 2em;
+	transform: skew(-47deg);
+}
+
+#about p {
+	margin-top: 1.5em;
+	margin-left: 3.5em;
+	margin-right: 4em;
+	font-size: 1.5em;
+	text-align: justify;
+	transform: skew(-47deg);
 }
