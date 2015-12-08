@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Geared;
+    src: url(GearedSlab.ttf);
+}
+
+@font-face {
+    font-family: GearedLight;
+    src: url(GearedSlab-Light.ttf);
+}
+
+
 html {
 	height: 100%;
 }
@@ -8,6 +19,15 @@ body {
 	overflow-x: hidden;
 	margin: 0pt;
 	padding: 0pt;
+}
+
+.hidden-bg img {
+	width: 100vw;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
 }
 
 .parallax {
@@ -33,26 +53,6 @@ body {
   transform: translateZ(-2px) scale(3);
 }
 
-/* DEBUG */
-.bg {
-	background-image: url(img/bg-debug.jpg);
-	background-repeat: repeat-y;
-}
-
-.parallax-layer-back {
-  	height: 400%;
-}
-
-.background {
-	position: absolute;
-	width: 100%;
-	z-index: -1;
-}
-
-.background img {
-	width: 100%;
-}
-
 
 /*=======================
 		Home
@@ -60,22 +60,47 @@ body {
 #home {
 	text-align: center;
 	position: relative;
-	color: #ccc;
+	background-image: url("img/permias website-06.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+    font-family: 'Geared';
 }
 
 #home .content img {
-	width: 30vw;
+	width: 26vw;
 }
 
 #home .content {
-	height: 100vh;
+	width: 100%;
+	padding-top: 5.4em;
+	padding-bottom: 5.02em;
 }
 
-#home .content div {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+#home h1 {
+	font-size: 91px;
+	letter-spacing: 0.2px;
+	margin-top: 0.16em;
+	color: rgb(186, 187, 188);
+}
+
+#home h2 {
+	font-family: 'GearedLight';
+	margin-top: -32px;
+	font-size: 33px;
+	letter-spacing: 0.1px;
+	color: rgb(186, 187, 188);
+}
+
+#home h3 {
+	font-size: 46px;
+	margin-top: 14px;
+	margin-bottom: 0;
+	color: white;
+}
+
+#home h3#loc {
+	margin-top: -10px;
+	letter-spacing: -0.2px;
 }
 
 
@@ -83,31 +108,45 @@ body {
 		About
 =========================*/
 #about {
+	text-align: center;
 	position: relative;
-	z-index: -2;
+	background-image: url("img/permias website-07.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+    font-family: 'Geared';
 }
 
 #about .content {
-	padding-top: 15%;
-	height: 90vh;
-	width: 65vw;
-	background: rgb(132, 204, 204);
-	transform: skew(47deg);
+	padding-top: 75px;
+	padding-bottom: 18.8em;
 }
 
 #about h2 {
-	font-size: 2.5em;
-	margin-left: 2em;
-	transform: skew(-47deg);
+	font-size: 64px;
+	letter-spacing: 6px;
+	border: 1px solid white;
+	outline: 1px solid black;
+	padding-top: 21px;
+	padding-bottom: 4px;
+	padding-left: 123px;
+	padding-right: 123px;
+	display: inline-block;
+	color: rgb(115, 179, 181);
+}
+
+#about .desc {
+	padding-top: 28px;
 }
 
 #about p {
-	margin-top: 1.5em;
-	margin-left: 3.5em;
-	margin-right: 4em;
-	font-size: 1.5em;
-	text-align: justify;
-	transform: skew(-47deg);
+	background-color: rgb(216, 217, 221);
+	display: inline-block;
+	width: 33%;
+    margin: 1.5%;
+    padding: 20px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
 }
 
 /*=======================
