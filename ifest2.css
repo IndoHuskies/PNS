@@ -1,0 +1,119 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*================
+		Home
+==================*/
+
+#home {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	text-align: center;
+	background: url(https://scontent-sea1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1471821_551622951595315_1813856739_n.jpg?oh=92e998b6dd642e8a4108f067ff68d9c1&oe=56DE2322);
+}
+
+#home .container:not(.content) {
+	color: #eee;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 80%;
+}
+
+#home hr {
+	margin-top: 3em;
+	margin-bottom: 4em;
+}
+
+#home h1 {
+	font-size: 4em;
+}
+
+#home h2 {
+	font-size: 2em;
+}
+
+#home h3 {
+	font-size: 1em;
+}
+
+/*================
+		Performances
+==================*/
+#performances {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	background-color: rgb(24, 16, 16);
+}
+
+#performances h2 {
+	text-align: center;
+	color: #eee;
+	font-size: 3em;
+}
+
+#performances .container {
+	width: 80%;
+	text-align: center;
+}
+
+#performances .perf {
+	width: 25%;
+	margin: 1%;
+	display: inline-block;
+	color: #ddd;
+}
+
+#performances .perf div {
+	padding: 1em;
+}
+
+#performances .img-perf {
+	width: 100%;
+}
+
+#performances .perf:nth-child(1) .img-perf {
+	background: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/13399_841994799224794_2535555254597318490_n.jpg?oh=1adc12e44d933535e5b94041f258e883&oe=572069EE);
+	background-size: auto 100%;
+	filter: blur(20px);
+}
+
+#performances .perf:nth-child(2) .img-perf {
+	background: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/11218482_841994449224829_3505339519654478986_n.jpg?oh=f627ec34f8c6a6814c6262a2a1b07a70&oe=571F08E6);
+	background-size: auto 100%;
+}
+
+#performances .perf:nth-child(3) .img-perf {
+	background: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xta1/v/t1.0-9/11145909_841993619224912_1839291422370191344_n.jpg?oh=ffeb5276863e938c37f68813158d1ab2&oe=56ED283A);
+	background-size: auto 100%;
+}
+
+#performances .img-perf:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+#performances .desc {
+	background-color: black;
+}
+
+#performances .content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s ease-in-out;
+}
+
+#performances .img-perf:hover + .content {
+	max-height: 1000px;
+	transition: max-height 1s ease-in-out;
+}
+
