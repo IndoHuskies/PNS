@@ -35,12 +35,9 @@
 		</div>
 
 		<div id="registration">
-			<div class="background">
-				<img src="img/part3.png">
-			</div>
 			<div class="content">
 				<div>
-					<h2>How to Register</h2>
+					<h2>REGISTRATION</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pars proposita.
 					</p>
@@ -77,5 +74,22 @@
 				</div>
 			</div>
 		</div>
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    	<script type="text/javascript">
+    	
+    	$(window).load(function() {
+    		var section = $('.content');
+
+    		var screenWidth = section.width();
+    		var screenHeight = Math.round(4500 * screenWidth / 8000) - 1;
+
+    		section.each(function() {
+    			$(this).css({'height': screenHeight + 'px'});
+    		});
+    	});
+    	</script>
+
 	</body>
 </html>
