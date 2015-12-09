@@ -153,7 +153,6 @@ body {
 
 #registration {
 	position: relative;
-	position: relative;
 	background-image: url("img/permias website-08.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -195,6 +194,11 @@ body {
 
 #teams {
 	position: relative;
+	background-image: url("img/permias website-09.png");
+	background: 100%;
+	background-repeat: no-repeat;
+	font-family: 'Geared';
+	text-align: center;
 }
 
 #teams .content {
