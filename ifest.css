@@ -122,3 +122,46 @@ body {
 	transition: max-height 1s ease-in-out;
 }
 
+/*================
+		Info Booth
+==================*/
+
+#info {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#info p {
+	display: inline-block;
+	width: 35%;
+}
+
+#info p:nth-child(2) {
+	text-align: right;
+}
+
+#info p:nth-child(4) {
+	text-align: left;
+}
+
+#info #que {
+	display: inline-block;
+	width: 10em;
+	height: 10em;
+	background-color: black;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	position: relative;
+	vertical-align: middle;
+	margin: 1em;
+}
+
+#info #que h2 {
+	margin: 0;
+	font-size: 5em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
