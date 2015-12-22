@@ -8,59 +8,90 @@
 
 		<!-- Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
+		<link href='https://fonts.googleapis.com/css?family=Arvo:400,700|Exo+2:400,700' rel='stylesheet' type='text/css'>
+		
 		<style type="text/css">
+			@font-face {
+			    font-family: Geared;
+			    src: url(GearedSlab.ttf);
+			}
+
+			a {
+				color: #ddd;
+			}
+
+			a:hover {
+				text-decoration: none;
+				color: #aaa;
+			}
+
 			body {
 				background-color: black;
 				position: relative;
 				height: 100vh;
 				width: 100vw;
-				font-family: 'Open Sans', sans-serif;
+				text-align: center;
+				color: #ddd;
 			}
 
-			h1 {
-				font-size: 5em;
+			#content {
+				padding-top: 2em;
+				padding-bottom: 5em;
 			}
 
-			a {
-				color: #eee;
+			#content img {
+				height: 20em;
+				width: 20em;
 			}
 
-			a:hover {
-				text-decoration: none;
+			#content h1, #cup {
+				font-family: 'Geared', sans-serif;
 			}
 
-			#container {
-				width: 75%;
-				height: 40%;
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%);
+			#content #fest {
+				font-family: 'Arvo', sans-serif;
 			}
 
-			#cup {
-				position: absolute;
-				top: 0;
-				left: 0;
+			#content h2 {
+				display: inline-block;
+				width: 40%;
 			}
 
-			#fest {
-				position: absolute;
-				right: 0;
-				bottom: 0;
+			#footer {
+				width: 100vw;
+				padding: 1em;
+				text-align: left;
+				font-family: 'Arvo', sans-serif;
+				background-color: white;
+				color: #222;
+				text-align: center;
 			}
+
+			#footer img {
+				height: 10em;
+				margin-right: 2em;
+				margin-left: 2em;
+			}
+
+			
 		</style>
 	</head>
 	<body>
-
-		<div id="container">
-			<div id="cup">
-				<h1><a href="pns.html">PERMIAS National Cup II</a></h1>
-			</div>
-			<div id="fest">
-				<h1><a href="ifest.html">iFest - Indonesian Festival</a></h1>
+		<div id="content">
+			<img src="img/logo.png">
+			<h1>PERMIAS National Cup II</h1>
+			<div>
+				<h2 id="cup"><a href="./pns.html">Competitions</a></h2>
+				<h2 id="fest"><a href="./ifest.html">iFest</a></h2>
 			</div>
 		</div>
+		
+		<div id="footer">
+			Brought to you by:
+			<hr>
+			<img src="img/logo isauw cropped in.jpg">
+			<img src="https://sites.google.com/site/permiasseattlearea/_/rsrc/1336351525495/home/299206_2227471606189_1229788345_32141504_583965438_n.jpg?height=400&width=398">
+		</div>
+		
 	</body>
 </html>
