@@ -36,7 +36,8 @@
 
 			#content {
 				padding-top: 2em;
-				padding-bottom: 5em;
+				padding-bottom: 2em;
+				position: relative;
 			}
 
 			#content img {
@@ -56,6 +57,34 @@
 				display: inline-block;
 				width: 40%;
 			}
+
+			.bg {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				z-index: -5;
+				transition: all 1s ease;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100%;
+			}
+
+			#cup + .bg {
+				background-image: url(img/pns.jpg);
+				opacity: 0;
+			}
+
+			#fest + .bg {
+				background-image: url(img/ifest.jpg);
+				opacity: 0;
+			}
+
+			#content h2:hover + .bg {
+				opacity: 1;
+			}
+
+			
 
 			#footer {
 				width: 100vw;
@@ -80,16 +109,18 @@
 		<div id="content">
 			<img src="img/logo.png">
 			<h1>PERMIAS National Cup II</h1>
-			<div>
-				<h2 id="cup"><a href="./pns.html">Competitions</a></h2>
-				<h2 id="fest"><a href="./ifest.html">iFest</a></h2>
-			</div>
+			<hr>
+			<h2 id="cup"><a href="./pns.html">Competitions</a></h2>
+			<div class="bg"></div>
+			<h2 id="fest"><a href="./ifest.html">iFest</a></h2>
+			<div class="bg"></div>
 		</div>
 		
 		<div id="footer">
 			Brought to you by:
 			<hr>
 			<img src="img/logo isauw cropped in.jpg">
+			<img src="https://pbs.twimg.com/profile_images/378800000496182570/4d0464e04f57b5592b20d169a26485a5_400x400.png">
 			<img src="https://sites.google.com/site/permiasseattlearea/_/rsrc/1336351525495/home/299206_2227471606189_1229788345_32141504_583965438_n.jpg?height=400&width=398">
 		</div>
 		
