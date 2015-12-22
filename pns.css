@@ -362,3 +362,47 @@ body {
     padding-left: 20px;
     /*color: rgb(175, 174, 180); */
 }
+
+
+/*===============
+		MOBILE
+=================*/
+@media only screen and (max-device-width: 600px) {
+	#home {
+		z-index: 1;
+	}
+
+	#home img {
+		width: 25vw;
+	}
+
+	#home h1 {
+		font-size: 80px;
+	}
+
+	#home h3 {
+		font-size: 35px;
+		margin-top: 12px;
+	}
+
+	#about {
+		z-index: -1;
+	}
+
+	#about p {
+		width: 40%;
+		font-size: 22px;
+	}
+
+	#registration p {
+		font-size: 30px;
+    	margin-top: 1em;
+    	margin-bottom: 1em;
+	}
+
+	#registration ul {
+	    font-size: 3em;
+	    list-style: none;
+	    padding: 0;
+	}
+}
