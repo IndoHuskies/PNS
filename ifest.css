@@ -53,25 +53,66 @@ body {
 		About
 ==================*/
 #about {
-	margin-top: 10%;
-	margin-bottom: 10%;
+	width: 100vw;
+	height: 100vh;
+	color: white;
 }
 
 #about h2 {
-	text-align: center;
-	font-size: 30pt;
+	text-align: right;
+	font-size: 35pt;
+	margin-top: 0;
+	margin-right: 40pt;
+	padding-top: 30pt;
 	margin-bottom: 5%;
-}
-
-#about h3 {
-	font-style: italic;
-	text-align: center;
-	font-size: 20pt;
+	z-index: -1;
 }
 
 #about p {
 	font-size: 15pt;
-	margin: 20pt 50pt;
+	margin: 30pt 60pt;
+	padding: 30pt 10pt;
+	z-index: -1;
+}
+
+#about .desc {
+	z-index: -1;
+	width: 90%;
+	background-color: #66CCFF;
+	border-radius: 5px 100px 5px;
+}
+
+#about .content {
+	z-index: -1;
+	height: 100%;
+	background-color: #33CCFF;
+}
+
+#about .back{
+	font-size: 60pt;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	color: #000066;
+	-webkit-text-stroke: 1px white;
+}
+
+#about .date{
+	position: absolute;
+	left: 50px;
+	top: 55px;
+	display: inline-block;
+}
+
+#about .loc{
+	position: absolute;
+	right: 50px;
+	bottom: 55px;
+	display: inline-block;
+}
+
+#about .date:hover, .loc:hover {
+	color: white;
 }
 
 /*================
