@@ -126,6 +126,59 @@ body {
 }
 
 /*=======================
+		Menu
+=========================*/
+#menu {
+	position: fixed;
+	z-index: 2;
+	top: 20pt;
+	font-family: 'Geared';
+}
+
+.navicon {
+    position: relative;
+    display: inline-block;
+}
+
+.navicon .lists {
+    position: absolute;
+    top: 100%;
+    display: none;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    font-size: 15pt;
+    min-width: 115px;
+    border-radius: 0 10px 10px 0;
+}
+
+.navicon:hover .lists {
+    display: block;
+    border-radius: 0 10px 10px 0;
+}
+
+.navicon button {
+    background: #E9F1F3;
+    border: none;
+    margin: 0;
+    padding: 0.4em 0.8em;
+    border-radius: 0 10px 10px 0;
+}
+
+.navicon a {
+    display: block;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    background-color: rgb(216, 217, 221);
+}
+
+.navicon a:hover {
+    color: #E9F1F3;
+}
+
+
+/*=======================
 		Home
 =========================*/
 #home {
