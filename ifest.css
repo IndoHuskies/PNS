@@ -235,6 +235,7 @@ body {
 	float: left;
 	color: white;
 	font-size: 11pt;
+	border-radius: 5px;
 }
 
 #food li:nth-child(even){
@@ -242,9 +243,13 @@ body {
 }
 
 #food li:nth-child(odd){
-	background-color: #7a6152;
+	background-color: #7a6152; 
+	-webkit-filter: blur(1px);
 }
 
+#food li:hover {
+	-webkit-filter: none;
+}
 
 /*================
 		Games
