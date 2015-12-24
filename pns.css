@@ -8,6 +8,17 @@
     src: url(GearedSlab-Light.ttf);
 }
 
+@font-face {
+    font-family: Octin;
+    src: url("octin sports rg.ttf");
+}
+
+@font-face {
+    font-family: Seils;
+    src: url("SEILS SANS ITALIC.otf");
+}
+
+
 @-webkit-keyframes spin {
     0%   {
         -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
@@ -200,16 +211,17 @@ body {
 }
 
 #home h1 {
-	font-size: 91px;
+	font-size: 80px;
 	letter-spacing: 0.2px;
 	margin-top: 0.16em;
 	color: rgb(186, 187, 188);
+	font-family: 'Octin';
 }
 
 #home h2 {
-	font-family: 'GearedLight';
-	margin-top: -32px;
-	font-size: 33px;
+	font-family: 'Seils';
+	margin-top: -20px;
+	font-size: 35px;
 	letter-spacing: 0.1px;
 	color: rgb(186, 187, 188);
 }
@@ -361,6 +373,11 @@ body {
     margin: 15px;
     padding-left: 20px;
     /*color: rgb(175, 174, 180); */
+}
+
+#teams p {
+	font-size: 35px;
+    margin-top: 40px;
 }
 
 

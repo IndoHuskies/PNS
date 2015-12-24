@@ -38,9 +38,13 @@
 		</div>
 
 		<div id="about">
+			<a href="#navbar" class="nav-up">
+				<i class="glyphicon glyphicon-menu-up"></i>
+				Back to top
+			</a>
 			<div class="back">
 				<div class="date">
-					02/15/2016
+					02/14/2016
 				</div>
 				<div class="loc">
 					Seattle, WA
@@ -51,13 +55,21 @@
 				<h2>About</h2>				
 				<div class="desc">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pars proposita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pars proposita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pars proposita.
+						iFest is an Indonesian Festival that serves as a medium in which we introduce Indonesian heritage through traditional performances, food, and arts &amp; crafts. Not only to familiarize the Indonesian culture in the community, but also to gather and unite Indonesian community in the Seattle greater area.
 					</p>
 				</div>
 			</div>
 		</div>
 
+		<div class="divider">
+			<img src="img/10-img.jpg">
+		</div>
+
 		<div id="performances">
+			<a href="#navbar" class="nav-up">
+				<i class="glyphicon glyphicon-menu-up"></i>
+				Back to top
+			</a>
 			<h2>Performances</h2>
 			<hr>
 			<div>
@@ -67,7 +79,7 @@
 						<div class="content">
 							<h3>Traditional Dances</h3>
 							<hr>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Contemnere vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accedunt terminatas.</p>
+							<p>Bask in various traditional dances from different cultures in Indonesia.</p>
 						</div>
 					</div>
 				</div>
@@ -78,7 +90,7 @@
 						<div class="content">
 							<h3>Music &amp; Bands</h3>
 							<hr>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Contemnere vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accedunt terminatas.</p>
+							<p>Enjoy musical performances and bands presenting popular Indonesian music.</p>
 						</div>
 					</div>
 				</div>
@@ -89,7 +101,7 @@
 						<div class="content">
 							<h3>Theatrical Drama</h3>
 							<hr>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Contemnere vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accedunt terminatas.</p>
+							<p>Experience traditional shows depicting traditional Indonesian literature and arts.</p>
 						</div>
 					</div>
 				</div>
@@ -97,9 +109,15 @@
 		</div>
 
 		<div id="food">
+			<a href="#navbar" class="nav-up">
+				<i class="glyphicon glyphicon-menu-up"></i>
+				Back to top
+			</a>
 			<div class="content">
 				<h2>Food</h2>
 				<div class="vendors">
+					<p>- Coming Soon -</p>
+					<!--
 					<ul>
 						<li>vendor1</li>
 						<li>empty</li>
@@ -122,13 +140,24 @@
 						<li>vendor10</li>
 						<li>empty</li>
 					</ul>
+					-->
 				</div>
 			</div>
 		</div>
 
+		<div class="divider">
+			<img src="img/7-img.jpg">
+		</div>
+
 		<div id="games">
+			<a href="#navbar" class="nav-up">
+				<i class="glyphicon glyphicon-menu-up"></i>
+				Back to top
+			</a>
 			<h2>Games</h2>
 			<div class="content">
+				<p>- Coming Soon -</p>
+				<!--
 				<div class="items">
 					<h3>Game1</h3>
 					<span>
@@ -156,6 +185,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pars proposita.</p>
 					</span>
 				</div>
+			-->
 			</div>
 		</div>
 
@@ -178,6 +208,13 @@
 
 
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+    	<script type="text/javascript">
+    	$('a').click(function(){
+    		$('html, body').animate({
+        		scrollTop: $( $.attr(this, 'href') ).offset().top
+   		 	}, 500);
+    		return false;
+		});
+    	</script>
 	</body>
 </html>

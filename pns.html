@@ -44,7 +44,7 @@
 				<img src="img/logo.png">
 				<h1>PERMIAS NASIONAL CUP II</h1>
 				<h2>GO BIG OR GO HOME</h3>
-				<h3>02/15/2016</h3>
+				<h3>02/13/2016 - 02/14/2016</h3>
 				<h3 id="loc">Seattle, WA</h3>
 			</div>
 		</div>
@@ -83,6 +83,8 @@
 			<div class="content">
 				<h2>TEAMS</h2>
 				<div class="lists">
+					<p>Coming Soon</p>
+					<!--
 					<ul>
 						<li>team1</li>
 						<li>team2</li>
@@ -97,6 +99,7 @@
 						<li>team9</li>
 						<li>team10</li>
 					</ul>
+					-->
 				</div>
 			</div>
 		</div>
@@ -114,6 +117,13 @@
     			$(this).css({'height': screenHeight + 'px'});
     		});
     	});
+
+    	$('a').click(function(){
+    		$('html, body').animate({
+        		scrollTop: $( $.attr(this, 'href') ).offset().top
+   		 	}, 500);
+    		return false;
+		});
     	</script>
 
 	</body>
