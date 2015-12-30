@@ -43,6 +43,10 @@ body {
 	color: #ccc;
 }
 
+#performances .nav-up:hover {
+	color: #d6890e;
+}
+
 /*================
 		Navbar
 ==================*/
@@ -62,12 +66,12 @@ body {
 }
 
 #navbar a, .nav-up {
-	color: black;
+	color: #3e3933;
 }
 
 #navbar a:hover, .nav-up:hover {
 	text-decoration: none;
-	color: #999999;
+	color: #d6890e;
 }
 
 #navbar #logo {
@@ -380,13 +384,17 @@ body {
 	display: inline-block;
 	width: 10em;
 	height: 10em;
-	background-color: black;
+	background-color: #3e3933;
 	border-radius: 50%;
 	text-align: center;
 	color: white;
 	position: relative;
 	vertical-align: middle;
 	margin: 1em;
+}
+
+#info #que:hover {
+	background-color: #d6890e;
 }
 
 #info #que h2 {
